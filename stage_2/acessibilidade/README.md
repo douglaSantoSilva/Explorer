@@ -1,4 +1,4 @@
-# Desafio-3-Acessibilidade
+# Acessibilidade
 correção do código e a utilização de semântica.
 
 O HTML e CSS estão funcionando porém o código foi feito sem nenhuma semântica e a tarefa é refatora-lo utilizando a semântica correta em cada elemento.
