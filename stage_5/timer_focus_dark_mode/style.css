@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color-white: hsla(0, 0%, 100%, 1);
+  --bg-primary-black: hsla(240, 6%, 21%, 1);
+  --bg-sound-grey:hsla(240, 9%, 89%, 1);
+}
+
+body {
+
+  font-family:'Roboto', sans-serif; 
+  font-weight: 500;
+  font-size: clamp(6rem, 7rem + 3vw, 12.61rem);
+  
+  line-height: 148px;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(255, 254, 254);
+
+}
+
+.backgroundDark {
+  background-color: black;
+  color: var(--bg-color-white);
+}
+
+.backgroundWhite {
+   background-color: white;
+   color: var(--bg-primary-black);
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  margin: 6.0rem 6.0rem 0 0;
+}
+
+main {
+  margin-top: 17rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+#DisplaySoundsMenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.soundsMenu button,
+.soundsMenu button path {
+  width: clamp(6rem, 9rem + 10vw, 13.8rem);
+  height: 15.2rem;
+  border-radius: 24px;
+  position: relative;
+  padding-bottom: 4.1rem;
+}
+
+.darkModeSounds.soundsMenu button,
+.darkModeSounds button path {
+  background-color: hsla(240, 6%, 17%, 1);
+  fill:hsla(240, 7%, 78%, 1);
+}
+
+.whiteModeSounds.soundsMenu button,
+.whiteModeSounds button path {
+  background-color: var(--bg-sound-grey);
+  fill: var(--bg-primary-black) ;
+}
+
+button.soundMenuSelected.forest,
+button.soundMenuSelected.rain,
+button.soundMenuSelected.fireplace,
+button.soundMenuSelected.coffeeShop,
+button.soundMenuSelected path{
+  background-color:  hsla(194, 97%, 31%, 1);
+  fill: var(--bg-color-white);
+}
+
+button input {
+  position: absolute;
+  bottom: 28px;
+  right: 2.4rem;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  
+  width: 9rem;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+
+
+
+
+@media (max-width: 800px){
+  main {
+    display: grid;
+    margin-top: 6rem;
+    gap: 5rem;
+  }
+  
+  header {
+    margin: 3.0rem 2.0rem 0 0;
+  }
+}

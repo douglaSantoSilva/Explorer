@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --text-color-white: white;
+  --ff-primary: 'Roboto', sans-serif;
+}
+
+body {
+  color:  var(--text-color-white);
+  font-family: var(--ff-primary);
+}
+
+.imgBackgroundHome {
+  background: url('./img/background.webp');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.imgBackgroundTheUniverse {
+  background: url('./img/backgroundUniverse.webp');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.imgBackgroundExploration {
+  background: url('./img/backgroundExploration.webp');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.navMenu {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.navMenu a {
+  font-weight: 400;
+  /* font-size: 2.2rem; */
+  font-size: clamp(0.5rem, 1rem + 1vw, 2.2rem);
+  line-height: 2.2rem;
+}
+
+.navMenu a,.homeText a{
+  color: #C4C4CC;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+header nav,
+header img {
+  margin-top: 5.0rem;
+  margin-left: clamp(0rem, 1rem + 4vw, 7.2rem);
+}
+
+#app {
+  display: grid;
+}
+
+.mainText  {
+  margin-top: 10.0rem;
+  display: grid;
+  margin-left: 10.2rem;
+}
+
+.mainText h1, .homeText h1 {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.8rem + 2vw, 4.8rem);
+  line-height: 6.0rem;
+}
+
+.mainText p {
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: clamp(0.5rem, 0.5rem + 1vw, 1.8rem);
+  width: clamp(10rem, 20rem + 30vw, 64.8rem);
+  color: #E1E1E6;
+  line-height: 2.88rem;
+}
+
+.homeText {
+ margin: 17.2rem auto;
+ display: grid;
+ align-items: center;
+ justify-items: center;
+ gap: 2.4rem;
+}
+
+.homeText a {
+  border: 2px solid #FFFFFF;
+  border-radius: 5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 3.2rem;
+}
+
+@media (max-width: 620px){
+  
+  #app{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  header {
+    gap: 0;
+  }
+
+  .navMenu {
+    gap: 1.5rem;
+  }
+
+  .mainText {
+    margin: 8rem 0;
+  }
+
+}  
+
+@media (min-width:620px){
+
+  .navMenu a:hover {
+    color: var(--text-color-white);
+  }
+  
+  .navMenu a:focus {
+    color: var(--text-color-white);
+    font-size: 2.6rem;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .homeText a:hover{
+    background: #FFFFFF;
+    color: #02799D;
+  }
+}

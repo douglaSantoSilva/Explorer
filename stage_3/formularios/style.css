@@ -1,0 +1,206 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+ font-size: 62.5%;
+}
+
+body {
+  background: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 4.8rem;
+  line-height: 6.0rem;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 36.8rem;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background: #535971;
+
+}
+
+.texto {
+ width: 75.0rem;
+ margin: 0 auto;
+}
+
+header {
+  margin-top: 1.40rem;
+}
+
+form {
+  width: 75.0rem;
+  margin: 5.8rem auto 0px;
+  background-color: #FFFFFF;
+  padding: 6.4rem 6.4rem 3.2rem 6.4rem;
+  border-radius: 2.0rem 2.0rem 0rem 0rem;
+}
+
+.wreapper-field, .wreapper-field fieldset  {
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.legend1 {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #E6E6F0;
+  margin-bottom: 3.6rem;
+}
+
+.wrepper-legend, .wrepper-legend2 {
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 0.8rem;
+  margin-bottom: 3.2rem;
+}
+fieldset {
+  border: 0;
+}
+
+.wreapper-camp {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.wreapper-camp input {
+  height: 5.6rem;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 0.8rem;
+  margin-bottom: 1.6rem;
+  padding: 1.0rem;
+  
+}
+
+.double {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.double input {
+ width: 30.0rem;
+}
+
+.wreapper-camp span {
+  color: #C1BCCC;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+
+  margin-left: 6px;
+}
+
+span:hover {
+  color: #535971;
+}
+.triple {
+  display: flex;
+  gap: 1.0rem;
+  
+}
+
+.triple div ~ div {
+  width: 14.0rem;
+}
+
+.triple > div:nth-child(1) {
+  width: 30.0rem;
+  margin-right: 2.2rem;
+}
+
+.wrepper-legend2 {
+  border: 0;
+  margin-bottom: 0px;
+  font-size: 2.0rem;
+}
+
+footer {
+  width: 75.0rem;
+  height: 16.0rem;
+  margin: 0px auto;
+  background-color: #535971;
+  border-radius: 0 0 2.0rem 2.0rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+.buttons {
+  background: #FF5374;
+  color: #FFFFFF;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  
+  width: 60.8rem;
+  height: 5.6rem;
+  border-radius: 2.0rem;
+  border: 0;
+}
+
+.buttons:hover {
+  background: #ee4d6d;
+  cursor: pointer;
+}
+/*Estou aprendendo responsividade
+utilizei por curiosidade, não ficou 100%*/
+@media (max-width: 750px) {
+
+
+  body {
+    background: #535971;
+    min-width: 65.0rem;
+  }
+  
+  .texto {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 30px;
+  }
+  
+  form {
+    border-radius: 0;
+  }
+
+  .double, .triple {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .double input, .wreapper-camp{
+    width: 60rem;
+   }
+
+  .triple input {
+    width: 60rem;
+  }
+}
