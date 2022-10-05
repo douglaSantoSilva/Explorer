@@ -25,6 +25,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 ### Projeto 1
 Descrição do Projeto 1
 
-### Projeto 2
-Descrição do Projeto 2
+### Stage 2
+Descrição do Stage 2
+[Clique aqui para ver os projetos](https://github.com/douglaSantoSilva/Explorer/tree/master/stage_2)
 
