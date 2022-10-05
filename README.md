@@ -1,4 +1,4 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/douglaSantoSilva/Rocketseat-Explorer-Projects?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/douglaSantoSilva/Explorer?style=flat-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/douglaSantoSilva/Rocketseat-Explorer-Projects?style=flat-square)
 <img src="https://img.shields.io/badge/Warning-not__completed-red"/>
 # Rocketseat Explorer 
