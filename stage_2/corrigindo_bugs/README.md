@@ -1,4 +1,3 @@
-# Desafio01
 # Iniciante - Corrigindo bugs (01) **👀**
 
 Desafio no qual tive que formatar o html e css deixando como o original, corrigindo posicionamentos e estrutura do site.
