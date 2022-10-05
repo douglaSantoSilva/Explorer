@@ -1,6 +1,6 @@
-[![Generic badge](https://img.shields.io/badge/<Warning>-<Not_Completed>-<red>.svg)](https://shields.io/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/douglaSantoSilva/Rocketseat-Explorer-Projects?style=flat-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/douglaSantoSilva/Rocketseat-Explorer-Projects?style=flat-square)
+<img src="https://img.shields.io/badge/Warning-not__completed-red"/>
 # Rocketseat Explorer 
 Projetos realizados no curso Explorer da RocketSeat.
 </br>
