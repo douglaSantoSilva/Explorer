@@ -25,10 +25,11 @@ do qual foi ensinado conceitos sobre:</p>
 * Fluxo com try, catch, throw.<br>
 
 <a href="https://douglasantosilva.github.io/Explorer/stage_6/GitFav/index.html" alt="página GitFav" target="_blank">
-  <img 
-  src="https://user-images.githubusercontent.com/107257951/194195101-27733a46-d83f-4c1e-9e8d-d9923a3ca2b2.png" 
-  alt="Imagem página com estrela com campo para adicionar um favorito do github.">
+
+  ![Animação](https://user-images.githubusercontent.com/107257951/194198656-37da20f4-2c10-4761-8958-401134847ee6.gif)
 </a>
 
 [Clique aqui para ver o Projeto! 🔎](https://douglasantosilva.github.io/Explorer/stage_6/GitFav/index.html)
+
+
 
