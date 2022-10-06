@@ -5,7 +5,7 @@
 Projetos realizados no curso Explorer da RocketSeat.
 </br>
 </br>
-<div align="center">
+<div>
   <img src="https://raw.githubusercontent.com/Rocketseat/awesome/master/assets/logo_rocketseat.png" alt="Imagem de um Astronauta">
 </div>
 
@@ -23,7 +23,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 <br>
 
 <h2>Stage 2 💀</h2>
-<div align="center">
+<div>
   <a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_2">
     Aprendendo bases de HTML com semântica e CSS.
   </a>
@@ -34,7 +34,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 </div>
 
 ## Stage 3  📱
-<div align="center">
+<div>
   <a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_3">
     Criando meu primeiro formulário, página com Responsividade e Mobile first, também aprendi sobre Grid e variáveis dentro do CSS.
   </a>
@@ -48,7 +48,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 <br>
 
 ## Stage 5 ⏰
-<div align="center">
+<div>
   <a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_5">
     Fazendo Timer baseado no pomodoro, aprendendo sobre DOM, factory e modularização.
   </a>
@@ -59,7 +59,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 </div>
 
 ## Stage 6 💻
-<div align="center">
+<div>
   <a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_5">
     Página criada com conceitos de SPA(Single page application), introdução a classes e heranças, assync e await, entre outros.
   </a>
