@@ -1,4 +1,4 @@
-<h1 align="left">Single Page Application</h1>
+<h1 align="left">Single Page Application 🔭</h1> 
 <p>Projeto do Explorer - Stage 06 pela RocketSeat
 do qual foi ensinado conceitos sobre:</p>
 <ul>
@@ -9,13 +9,11 @@ do qual foi ensinado conceitos sobre:</p>
 </ul>
 
 <h2>Imagem do projeto</h2>
-<a href="https://single-page-application-mbt8.vercel.app/" target="_blank">
-  
-  ![Página da applicação](https://i.imgur.com/FS26sey.png)
-</a>
+
 <a href="https://single-page-application-eight.vercel.app/" target="_blank">
-  Clique aqui para visualizar.
+ <img src="https://i.imgur.com/FS26sey.png" alt="Imagem do site com céu estrelado.">
 </a>
+<br>
 
-
+[Clique aqui para ver o Projeto! 🔎](https://single-page-application-eight.vercel.app/)
 
