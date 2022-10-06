@@ -266,6 +266,10 @@ td p {
     gap: 0;
   }
   
+  .SearchAdd{
+    margin-right: 1rem;
+  }
+  
   .controlTable{
     border: 2px solid var(--bg-color-two);
     margin-left: 1.5rem;
