@@ -11,9 +11,8 @@ do qual foi ensinado conceitos sobre:</p>
 <h2>Imagem do projeto</h2>
 
 <a href="https://single-page-application-eight.vercel.app/" target="_blank">
- <img src="https://i.imgur.com/FS26sey.png" alt="Imagem do site com céu estrelado.">
+ <img src="https://user-images.githubusercontent.com/107257951/194199412-11b199aa-eed9-43b7-993e-cd14bcb51964.gif" alt="Imagem do site com céu estrelado.">
 </a>
 <br>
 
 [Clique aqui para ver o Projeto! 🔎](https://single-page-application-eight.vercel.app/)
-
