@@ -1,11 +1,21 @@
 # Timer-Focus-2.0 ⏰
 Desafio Stage 05 da RocketSeat
 
-Aprendi sobre DOM(Document Object Model),</br>
-Event-driven(Eventos),</br>
-ES6 Modules(Modularização),</br>
-Criação de objectos com o padrão Factory,</br>
-injeção de depêndencias, entre outros!
+### Conceitos
+-Aprendi sobre DOM(Document Object Model),</br>
+-Event-driven(Eventos),</br>
+-ES6 Modules(Modularização),</br>
+-Criação de objectos com o padrão Factory,</br>
+-injeção de depêndencias, entre outros!
+
+## Funcionalidades
+
+- ☀️ Temas dark e light
+- ▶️ inicia Timer;
+- ⏹️ pausa o Timer;
+- ➕ Adiciona 5 minutos;
+- ➖ Remove 5 minutos;
+- 🔳 Selecione a música de fundo pelos botões.
 
 <div>
    <a href="https://douglasantosilva.github.io/Explorer/stage_5/timer_focus_dark_mode/index.html" alt="Página Timer Focus">
