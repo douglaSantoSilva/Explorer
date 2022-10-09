@@ -13,7 +13,7 @@ Projetos realizados no curso Explorer da RocketSeat.
 <div align="right">
   <h3>Tecnologias do Curso</h3>
   <div>
-    <a href="https://skillicons.dev">
+    <a  width="50%" height="50%" href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=js,html,css,react,nodejs,git,github" />
     </a>
   </div>
