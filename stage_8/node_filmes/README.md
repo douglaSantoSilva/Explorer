@@ -9,7 +9,7 @@ Separação por responsabilidades, contendo pasta geral src, e nela as pastas de
 Ele unifica a forma de fazer querys para os banco SQL, dessa forma não depende de um banco específico, podendo troca-lo de forma simples, tendo suporte completo ao Postgres, Sql Server, Mysql, MariaDB, Sqlite3, Oracle e Amazon Redshift.<br>
 **Back-end:** Node, Express
 
-## Endidades e Relacionamentos DB 
+## Entidades e Relacionamentos DB 
 <div align="center">
   <img  width="90%" height="70%"  src="https://user-images.githubusercontent.com/107257951/196451510-f2b02c3a-d866-4fcf-8021-429ad7cc335d.PNG" alt="banco de dados">
 </div>
