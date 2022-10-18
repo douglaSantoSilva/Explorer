@@ -1,4 +1,4 @@
-# BackEnd Nodejs
+# BackEnd Nodejs Projeto Node_filmes
 
 ## Arquitetura Utilizada
 Separação por responsabilidades, contendo pasta geral src, e nela as pastas de routes, controller, utils e database.
