@@ -34,7 +34,8 @@ export default createGlobalStyle`
   }
 
   &::-webkit-scrollbar-track{
-    margin-bottom: 20px;
+    //estava 20px tentar ajustar de outra forma depois
+    margin-bottom: 500px;
   }
 
   &::-webkit-scrollbar-thumb{

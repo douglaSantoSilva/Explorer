@@ -11,13 +11,14 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-    width: 100%;
+    //Scroll Bar Main, but Size is too large
+    width: 1160px;
     overflow-y: auto;
     margin: 0 auto;
   }
 `
 export const Content = styled.div`
-  max-width: 1160px;
+  width: 100%;
   margin: 40px auto 0;
  
 
@@ -40,8 +41,34 @@ export const Form = styled.form`
   > textarea {
     margin-top: 40px;
   }
+
+  > section{
+    
+   > div{
+    display: flex;
+    padding: 16px;
+    gap: 24px;
+  
+    border-radius: 8px;
+
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+   }}
+   
 `
 
-export const Section = styled.section`
+export const NewNote = styled.div`
+
+
+  > div {
+    width: 100%;
+    display: flex;
+
+    gap: 40px;
+
+     button:nth-child(1){
+      background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+      color: ${({theme}) => theme.COLORS.PINK};
+    }
+  }
 `
 

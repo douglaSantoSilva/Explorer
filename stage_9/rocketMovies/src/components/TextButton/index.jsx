@@ -5,7 +5,7 @@ export function TextButton({icon:Icon, title, ...rest}) {
     <Container 
     type='button'
     {...rest}>
-      {Icon && <Icon size={12}/>}
+      {Icon && <Icon size={16}/>}
       {title}
     </Container>
   )
