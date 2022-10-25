@@ -16,9 +16,7 @@ export const Container = styled.div`
     overflow-y: auto;
   }
 `
-
 export const Content = styled.div`
   width: 100%;
   margin: 40px auto 156px;
- 
 `

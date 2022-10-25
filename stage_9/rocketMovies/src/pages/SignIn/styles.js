@@ -45,17 +45,13 @@ export const Form = styled.form`
     width: 100%;
     display: grid;
     gap: 8px;
-    
-    div{input{outline: none;}}
+    margin-bottom: 42px;
 
     button:nth-child(3) {
       font-weight: 500;
       font-size: 16px;
       margin-top: 8px;
       color: ${({theme}) => theme.COLORS.GRAY_300};
-    }
-    button:nth-child(4) {
-      margin: 42px auto;
     }
   }
 `

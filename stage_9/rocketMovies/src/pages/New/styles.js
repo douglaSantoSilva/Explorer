@@ -21,7 +21,6 @@ export const Content = styled.div`
   width: 100%;
   margin: 40px auto 0;
  
-
   > h1 {
     font-weight: 500;
     font-size: 36px;
@@ -53,21 +52,23 @@ export const Form = styled.form`
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
    }}
-   
 `
 
 export const NewNote = styled.div`
-
-
   > div {
     width: 100%;
     display: flex;
 
     gap: 40px;
 
-     button:nth-child(1){
+     a:nth-child(1){
       background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
       color: ${({theme}) => theme.COLORS.PINK};
+    }
+
+    a {
+      color: ${({theme}) => theme.COLORS.GRAY_300};
+      width: 100%;
     }
   }
 `

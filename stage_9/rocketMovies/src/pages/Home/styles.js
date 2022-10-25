@@ -10,15 +10,18 @@ export const Container = styled.div`
   "content";
 
   > main {
+    overflow-y: auto;
     grid-area: content;
   }
 `
-
 export const Content = styled.div`
   display: grid;
-  gap: 15px;
-  max-width: 1130px;
   margin: 0 auto 40px;
+
+  max-width: 1130px;
+  height: 630px;
+
+  gap: 15px;
 
   > button {
     margin-top: 40px;
@@ -36,34 +39,18 @@ export const Content = styled.div`
       font-size: 36px;
     }
 
-    button {
-      width: 207px;
-    }
-
   }
 `
 export const Section = styled.section`
   max-height: 620px;
   overflow-y: scroll;
-
-
-  &::-webkit-scrollbar {
-    background-color: transparent;
-  }
+  
 
   &::-webkit-scrollbar-track{
     margin-bottom: 20px;
   }
 
-  &::-webkit-scrollbar-thumb{
-    border: 5px solid transparent;
-    
-    background-clip: padding-box;
-    border-radius: 10px;
-    background-color: ${({theme}) => theme.COLORS.PINK};
-  }
-
-  > button {
+  > a {
     border: none;
     width: 100%;
     display: flex;
@@ -82,6 +69,5 @@ export const Section = styled.section`
       text-overflow: ellipsis !important;
       
       color: ${({theme}) => theme.COLORS.TEXT_GRAY};
-    }
-  }
+    }}
 `

@@ -10,8 +10,7 @@ export function MoviePreview() {
       <Header />
         <main>
           <Content>
-
-            <TextButton title="Voltar" icon={FiArrowLeft} />
+            <TextButton title="Voltar" icon={FiArrowLeft} to="/"/>
             <ShowMovie
               icon={FiClock}
               data={{

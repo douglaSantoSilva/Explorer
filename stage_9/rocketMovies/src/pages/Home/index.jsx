@@ -11,12 +11,13 @@ export function Home() {
         <Content>
           <div>
             <h1>Meus Filmes</h1>
-            <Button title="Adicionar Filme" icon={FiPlus}></Button>
+            <Button title="Adicionar Filme" icon={FiPlus} to="/new"></Button>
           </div>
 
           <Section>
             <NoteMovie data={
             {
+            rating: 4,
             title: 'Interestellar',
             description: `Pragas nas colheitas fizeram a
              civilização humana regredir para uma sociedade 
@@ -56,6 +57,7 @@ export function Home() {
           
             <NoteMovie data={
             {
+            rating: 3,
             title: 'Interestellar',
             description: `Pragas nas colheitas fizeram a
              civilização humana regredir para uma sociedade 

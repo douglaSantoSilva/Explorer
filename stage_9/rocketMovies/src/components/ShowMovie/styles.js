@@ -11,6 +11,7 @@ export const Container = styled.div`
   > div:nth-child(1) {
 
     display: flex;
+    align-items: center;
     margin: 24px 0;
 
     h1 {
@@ -19,6 +20,16 @@ export const Container = styled.div`
       color: ${({theme}) => theme.COLORS.WHITE_100};
 
       margin-right: 19px;
+    }
+
+    svg {
+      font-size: 18px;
+      margin-right: 10px;
+      color: ${({theme}) => theme.COLORS.PINK};
+    }
+
+    .giveStar {
+      fill: ${({theme}) => theme.COLORS.PINK};
     }
   }
 

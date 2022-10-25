@@ -15,7 +15,7 @@ export function New() {
       <Header />
       <main>
         <Content>
-          <TextButton title="Voltar" icon={FiArrowLeft}/>
+          <TextButton title="Voltar" icon={FiArrowLeft} to="/"/>
           <h1>Novo Filme</h1>
         <Form>
           <div>

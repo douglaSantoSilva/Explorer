@@ -14,6 +14,7 @@ export default createGlobalStyle`
 
   body, button, textarea, input {
     font-family: 'Roboto Slab', serif;
+    outline: none;
   }
 
   a {
@@ -25,8 +26,15 @@ export default createGlobalStyle`
     transition: filter 0.2s;
   }
 
+
   button:hover, a:hover {
     filter: brightness(0.9);
+  }
+
+  input{
+    &::placeholder{
+      color: ${({theme}) => theme.COLORS.GRAY_200};
+    }
   }
 
   &::-webkit-scrollbar {

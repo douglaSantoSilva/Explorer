@@ -14,11 +14,11 @@ export function SignUp(){
         <h2>Crie sua conta</h2>
 
         <div>
-          <Input placeholder="Nome" icon={FiUser} />
-          <Input placeholder="E-mail" icon={FiMail} />
-          <Input placeholder="Senha" icon={FiLock} />
+          <Input placeholder="Nome" icon={FiUser} type="text" />
+          <Input placeholder="E-mail" icon={FiMail} type="email" />
+          <Input placeholder="Senha" icon={FiLock} type="password" />
           <Button title="Cadastrar" />
-          <TextButton title="Voltar para o Login" icon={FiArrowLeft}/>
+          <TextButton title="Voltar para o Login" icon={FiArrowLeft} to="/"/>
         </div>
           
       </Form>

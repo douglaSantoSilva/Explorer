@@ -5,10 +5,10 @@ export function Header() {
   <Container>
     <h1>RocketMovies</h1>
     <Search placeholder='Pesquisar pelo título'/>
-    <Profile>
+    <Profile to="/profile">
       <div>
         <strong>Douglas Santos</strong>
-        <Logout>Sair</Logout>
+      <Logout>Sair</Logout>
       </div>
       <img 
       src="https://www.github.com/douglaSantoSilva.png" 

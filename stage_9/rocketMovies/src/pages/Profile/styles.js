@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const Container = styled.div`
 
   > header {
@@ -9,13 +8,11 @@ export const Container = styled.div`
 
     align-items: center;
     
-    button {
+    a {
       margin-left: 144px;
     }
   }
-
 `
-
 export const Avatar = styled.div`
 
   position: relative;
@@ -24,7 +21,6 @@ export const Avatar = styled.div`
 
   margin: -90px auto 64px;
   
-
   > img {
     width: 186px;
     height: 186px;
@@ -56,28 +52,19 @@ export const Avatar = styled.div`
       height: 20px;
 
       color: ${({theme}) => theme.COLORS.PINK};
-    }
-  }
+    }}
 `
-
 export const Form = styled.form`
   margin: 0 auto;
   max-width: 340px;
 
-  > button {
-    margin-top: 8px;
+  > a {
+    margin-top: 24px;
   }
-
 `
 export const InputBox = styled.div`
   display: grid;
   gap: 8px;
-
-  > div {
-    input {
-      outline: none;
-    }
-  }
 
   > div:nth-child(1) { 
     input{
@@ -96,5 +83,4 @@ export const InputBox = styled.div`
   > div:nth-child(3) { 
       margin-top: 16px;
   }
-
 `

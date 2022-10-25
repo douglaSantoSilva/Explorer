@@ -37,6 +37,7 @@ export const Form = styled.form`
     font-size: 14px;
     color: ${({theme}) => theme.COLORS.GRAY_050};
 
+    align-self: start;
     margin-bottom: 48px;
   }
 
@@ -44,8 +45,6 @@ export const Form = styled.form`
     width: 100%;
     display: grid;
     gap: 8px;
-    
-    div{input{outline: none;}}
 
     button:nth-child(4) {
       font-weight: 500;
@@ -53,7 +52,8 @@ export const Form = styled.form`
       margin-top: 8px;
       color: ${({theme}) => theme.COLORS.GRAY_300};
     }
-    button:nth-child(5) {
+
+    a:nth-child(5) {
       margin: 42px auto;
     }
   }

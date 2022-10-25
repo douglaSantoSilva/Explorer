@@ -11,7 +11,6 @@ export const Container = styled.div`
   border: ${({theme, isNew}) => !isNew ? "none" : `2px dashed ${theme.COLORS.GRAY_200}`};
   background-color: ${({theme, isNew}) => isNew ? "transparent" : theme.COLORS.BACKGROUND_700};
   
-
   > button {
     border: none;
     background: none;
@@ -30,10 +29,6 @@ export const Container = styled.div`
 
     &::placeholder {
       color: ${({theme, isNew}) => !isNew ? theme.COLORS.WHITE : theme.COLORS.GRAY_200};
-    }
-
-    &:focus{
-      outline: 0;
     }
   }
 

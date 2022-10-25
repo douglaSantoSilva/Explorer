@@ -3,20 +3,19 @@ import { TextButton } from '../../components/TextButton'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { Container, Avatar, Form, InputBox } from './styles'
-
+import { } from 'react-router-dom'
 
 export function Profile() {
   return(
     <Container>
       <header>
-        <TextButton title="Voltar" icon={FiArrowLeft} />
+        <TextButton title="Voltar" icon={FiArrowLeft} to="/" />
       </header>
         <Form>
           <Avatar>
           <img 
           src="https://github.com/douglaSantoSilva.png" 
           alt="Foto do Usuário" />
-
           <label htmlFor="avatar">
             <FiCamera />
 
@@ -28,10 +27,10 @@ export function Profile() {
           </Avatar>
 
           <InputBox>
-            <Input placeHolder="Douglas Santos" icon={FiUser} />               
-            <Input placeHolder="douglas@gmail.com" icon={FiMail}/>    
-            <Input placeHolder="Senha atual" icon={FiLock} />               
-            <Input placeHolder="Nova senha" icon={FiLock} /> 
+            <Input placeHolder="Douglas Santos" icon={FiUser} type="text" />               
+            <Input placeHolder="douglas@gmail.com" icon={FiMail} type="email" />    
+            <Input placeHolder="Senha atual" icon={FiLock} type="password" />               
+            <Input placeHolder="Nova senha" icon={FiLock} type="password" /> 
           </InputBox>
         
           <Button title="Salvar"/>
