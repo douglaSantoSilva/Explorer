@@ -15,7 +15,6 @@ export function NoteMovie({data,...rest}) {
           {data.rating == 5 ? <FiStar className="giveStar"/> : <FiStar/>}
         </Star>
        
-         
       <p>{data.description}</p>
       {
       data.tags &&
