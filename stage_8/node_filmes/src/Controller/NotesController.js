@@ -28,7 +28,7 @@ class NotesController {
     console.log(tagsInsert)
     await knex("movie_tags").insert(tagsInsert)
 
-    response.status(201).json({message: "Nota criada com sucesso"})
+   return response.status(201).json({message: "Nota criada com sucesso"})
   }
 
   async show(request, response) {

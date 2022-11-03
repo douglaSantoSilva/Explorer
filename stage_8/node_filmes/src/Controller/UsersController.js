@@ -75,7 +75,7 @@ class UsersController {
     await knex('users').where({id: id}).update({email: userObject.email, name: userObject.name})
     }
     
-    response.json({message: "Usuário atualizado com sucesso!"})
+  return response.json({message: "Usuário atualizado com sucesso!"})
   }
 
 
