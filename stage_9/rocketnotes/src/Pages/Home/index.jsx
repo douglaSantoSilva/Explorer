@@ -55,6 +55,7 @@ export function Home() {
     fetchNotes()
   }, [tagsSelected, search])
 
+  console.log('notes', notes)
   return(
     <Container>
       <Brand>
