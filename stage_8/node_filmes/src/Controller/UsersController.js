@@ -13,7 +13,7 @@ class UsersController {
     const verifyEmailExist = await knex.select("email").from("users").where({email: email})
 
     if(verifyEmailExist.length > 0) {
-      throw new AppErrors("Este e-mail já está cadastrado.")
+      throw new AppErrors("Este e-mail já está cadastrado.", 401)
     }
 
     const hashedPassword = await hash(password, 8)
@@ -23,62 +23,51 @@ class UsersController {
   }
 
   async update(request, response) {
-    const { name, newEmail, password, oldPassword } = request.body
-    const { id } = request.params
+    const { name, newEmail, password, old_password} = request.body
+    const user_id = request.user.id
     
-    if(id) {
-    // User not find
-    const user = await knex.select("id", "name", "email", "password").from("users").where({id: id})
-    const userNotExist = user.length <= 0 ? true : false
+    const user = await knex("users").where({id: Number(user_id)}).first()
     
-    if(userNotExist) {
-      throw new AppErrors("Usuário não encontrado")
+    if(!user) {
+      throw new AppErrors("usuário não encontrado", 401)
     }
 
-    //userExist
-    const userObject = user[0]
-    const emailIsDifferentFromUserId = newEmail != userObject.email && newEmail
-    
-    //Change Your Email
-    if(emailIsDifferentFromUserId) {
-      
-      const emailCompare = await knex.from("users").where({email: newEmail})
-      const verifyEmailExist = emailCompare.length > 0 ? true : false
-
-      if(verifyEmailExist) {
-        throw new AppErrors("Este e-mail já está cadastrado.")
-      }
+    const withUpdateEmail = await knex("users").where("email", newEmail).first()
+   
+    if(withUpdateEmail && withUpdateEmail.id !== user.id) {
+      throw new AppErrors("E-mail já cadastrado", 401)
     }
 
-    //Must Have Old Password
-    if(password && !oldPassword) {
-      throw new AppErrors("Your old password is required.")
+    user.name = name  ?? user.name;
+    user.email = newEmail ?? user.email;
+
+
+    if(password && !old_password) {
+      throw new AppErrors("necessário digitar a senha antiga.", 401)
     }
 
-    //If has change the Password
-    if(password && oldPassword) {
-      const userOldPasswordIsTrue = await compare(oldPassword, userObject.password)
-      console.log(userOldPasswordIsTrue)
-      if(!userOldPasswordIsTrue) {
-        throw new AppErrors("The old password is incorrect.")
+    if(password && old_password) {
+
+      const matchPassword = await compare(old_password, user.password)
+
+      if(!matchPassword) {
+        throw new AppErrors("A senha antiga está incorreta.", 401)
       }
 
-    const hashedPassword = await hash(password, 8)
-    //update Password
-      await knex('users').where({id: id}).update({password: hashedPassword})
+      //Nessa parte poderia haver senha com digitos mínimos.
+      user.password = await hash(password, 8)
     }
 
-    userObject.name = name ?? userObject.name
-    userObject.email = newEmail ?? userObject.email
-
-    //Then update name and email
-    await knex('users').where({id: id}).update({email: userObject.email, name: userObject.name})
-    }
-    
-  return response.json({message: "Usuário atualizado com sucesso!"})
+    await knex("users")
+    .where({id: Number(user_id)})
+    .update({
+      name: user.name,
+      email: user.email, 
+      password: user.password
+    })
+ 
+   return response.json({message: "Usuário atualizado com sucesso!"}, 201)
   }
-
-
 }
 
 
