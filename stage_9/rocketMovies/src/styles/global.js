@@ -22,6 +22,7 @@ export default createGlobalStyle`
   }
 
   button, a {
+    border: none;
     cursor: pointer;
     transition: filter 0.2s;
   }

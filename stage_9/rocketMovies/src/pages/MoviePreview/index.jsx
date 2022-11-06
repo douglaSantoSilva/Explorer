@@ -1,9 +1,10 @@
 import { TextButton } from '../../components/TextButton'
-import {ShowMovie} from '../../components/ShowMovie'
+import { ShowMovie } from '../../components/ShowMovie'
 import { Header } from '../../components/Header'
 import { Container, Content } from './styles'
 import { FiArrowLeft } from 'react-icons/fi'
 import { FiClock } from 'react-icons/fi'
+  
 export function MoviePreview() {
   return(
     <Container>

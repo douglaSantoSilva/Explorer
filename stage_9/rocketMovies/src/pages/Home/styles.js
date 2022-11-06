@@ -23,10 +23,6 @@ export const Content = styled.div`
 
   gap: 15px;
 
-  > button {
-    margin-top: 40px;
-  }
-
   > div {
     display: flex;
     justify-content: space-between;
@@ -37,6 +33,12 @@ export const Content = styled.div`
     h1 {
       font-weight: 500;
       font-size: 36px;
+    }
+
+    button {
+      font-weight: 400;
+      padding: 16px 32px;
+      color: ${({theme}) => theme.COLORS.BACKGROUND_800};
     }
 
   }

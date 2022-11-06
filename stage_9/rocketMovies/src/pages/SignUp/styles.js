@@ -47,10 +47,7 @@ export const Form = styled.form`
     gap: 8px;
 
     button:nth-child(4) {
-      font-weight: 500;
-      font-size: 16px;
       margin-top: 8px;
-      color: ${({theme}) => theme.COLORS.GRAY_300};
     }
 
     a:nth-child(5) {

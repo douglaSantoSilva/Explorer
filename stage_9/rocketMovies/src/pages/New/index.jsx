@@ -3,7 +3,7 @@ import { Container, Content, Form, NewNote} from './styles'
 import { TextButton } from '../../components/TextButton'
 import { TextArea } from '../../components/TextArea'
 import { Section } from '../../components/Section'
-import { Button } from '../../components/Button'
+import { ButtonSign } from '../../components/ButtonSign'
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { FiArrowLeft } from 'react-icons/fi'
@@ -33,8 +33,8 @@ export function New() {
 
           <NewNote>
             <div>
-              <Button title="Excluir filme"/>
-              <Button title="Salvar alterações"/>
+              <ButtonSign title="Excluir filme"/>
+              <ButtonSign title="Salvar alterações"/>
             </div>
           </NewNote>
 

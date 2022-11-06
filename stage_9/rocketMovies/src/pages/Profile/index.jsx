@@ -1,9 +1,8 @@
 import { FiArrowLeft, FiCamera, FiLock, FiUser, FiMail } from 'react-icons/fi'
 import { TextButton } from '../../components/TextButton'
-import { Button } from '../../components/Button'
+import { ButtonSign } from '../../components/ButtonSign'
 import { Input } from '../../components/Input'
 import { Container, Avatar, Form, InputBox } from './styles'
-import { } from 'react-router-dom'
 
 export function Profile() {
   return(
@@ -33,7 +32,7 @@ export function Profile() {
             <Input placeHolder="Nova senha" icon={FiLock} type="password" /> 
           </InputBox>
         
-          <Button title="Salvar"/>
+          <ButtonSign title="Salvar"/>
       </Form>
     </Container>
   )

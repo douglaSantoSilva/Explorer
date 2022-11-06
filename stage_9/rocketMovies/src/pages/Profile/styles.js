@@ -58,7 +58,8 @@ export const Form = styled.form`
   margin: 0 auto;
   max-width: 340px;
 
-  > a {
+  > button {
+    width: 100%;
     margin-top: 24px;
   }
 `
