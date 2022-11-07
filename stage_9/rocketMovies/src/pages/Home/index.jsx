@@ -2,8 +2,7 @@ import { FiPlus } from 'react-icons/fi'
 import { Container, Content, Section} from './styles'
 import { Header} from '../../components/Header'
 import { NoteMovie } from '../../components/NoteMovie'
-import { ButtonSign } from '../../components/ButtonSign'
-
+import { TextButton } from '../../components/TextButton'
 
 export function Home() {
   return(
@@ -13,7 +12,7 @@ export function Home() {
         <Content>
           <div>
             <h1>Meus Filmes</h1>
-            <ButtonSign title="Adicionar Filme" icon={FiPlus} to="/new" />
+            <TextButton title="Adicionar Filme" icon={FiPlus} to="/new" />
           </div>
 
           <Section>

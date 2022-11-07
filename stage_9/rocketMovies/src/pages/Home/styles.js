@@ -35,12 +35,15 @@ export const Content = styled.div`
       font-size: 36px;
     }
 
-    button {
+    a {
       font-weight: 400;
       padding: 16px 32px;
-      color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-    }
 
+      border-radius: 8px;
+
+      color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+      background-color:  ${({theme}) => theme.COLORS.PINK};
+    }
   }
 `
 export const Section = styled.section`

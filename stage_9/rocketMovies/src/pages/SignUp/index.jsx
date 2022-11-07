@@ -56,7 +56,7 @@ export function SignUp(){
             placeholder="E-mail" 
             icon={FiMail} 
             type="email" 
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setEmail(e.target.value.toLowerCase())}
           />
           <Input 
             placeholder="Senha" 

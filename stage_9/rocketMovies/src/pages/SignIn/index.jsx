@@ -36,12 +36,12 @@ export function SignIn(){
             placeholder="E-mail" 
             icon={FiMail} 
             type="email" 
-            onChange={e => setEmail(e.target.value)} 
+            onChange={e => setEmail(e.target.value)}
           />
           <Input 
             placeholder="Senha" 
             icon={FiLock} 
-            type="password" 
+            type="password"
             onChange={e => setPassword(e.target.value)} 
           /> 
           <ButtonSign title="Entrar" onClick={handleSignIn}/>

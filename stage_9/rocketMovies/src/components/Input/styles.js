@@ -24,5 +24,5 @@ export const Container = styled.div`
    color: ${({theme}) => theme.COLORS.GRAY_200};
    margin-left: 18px;
   }
-
 `
+

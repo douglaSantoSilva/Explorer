@@ -39,37 +39,37 @@ export const Search = styled.input`
   
 `
 
-export const Profile = styled(Link)`
+export const Profile = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
 
   color: ${({theme}) => theme.COLORS.WHITE_100};
-  
-  > img {
+
+  > a {
+    img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
 
     border: 1px solid ${({theme}) => theme.COLORS.GRAY_300};
-  
+  }
   }
 
   > div {
     display: flex;
     flex-direction: column;
-
+   
     strong {
       white-space: nowrap;
     }
   }
 `
 
-export const Logout = styled.button`
+export const Logout = styled(Link)`
   background: transparent;
   border: none;
- 
-  align-self: end;
+  align-self: flex-end;
 
   font-size: 14px;
   color: ${({theme}) => theme.COLORS.GRAY_200};
