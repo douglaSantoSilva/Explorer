@@ -55,14 +55,14 @@ export const Section = styled.section`
     margin-bottom: 20px;
   }
 
-  > a {
+  > div {
     border: none;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
     transition: filter 0.1s;
-    
+    cursor: pointer;
 
      p {
       width: 100%;

@@ -66,7 +66,7 @@ export function SignUp(){
           />
 
           <ButtonSign title="Cadastrar" onClick={handleSignUp} />
-          <TextButton title="Voltar para o Login" icon={FiArrowLeft} to="/"/>
+          <TextButton title="Voltar para o Login" icon={FiArrowLeft} to={-1}/>
 
         </div>    
              

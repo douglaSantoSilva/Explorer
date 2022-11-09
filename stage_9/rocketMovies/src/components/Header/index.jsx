@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import avatarPlaceholder from '../../assets/avatar_placeholder.svg'
 import { api } from '../../services/api'
 
-export function Header() {
+export function Header({onChange, isSearch}) {
   const { signOut, user } = useAuth()
   const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
   
@@ -15,7 +15,9 @@ export function Header() {
   return(
   <Container>
     <h1>RocketMovies</h1>
-    <Search placeholder='Pesquisar pelo título'/>
+
+    {isSearch ? <Search placeholder='Pesquisar pelo título' onChange={onChange}/> : <></>}
+    
     <Profile to="/profile">
       <div>
         <strong>{user.name}</strong>

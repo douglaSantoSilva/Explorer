@@ -2,7 +2,7 @@ import { Container, Profile } from './styles'
 import { Tag } from '../Tag'
 import { FiStar } from 'react-icons/fi'
 
-export function ShowMovie({data,children, icon: Icon, ...rest}) {
+export function ShowMovie({data,children, icon: Icon, title, avatar, ...rest}) {
   return(
     <Container>
       <div>
@@ -16,11 +16,11 @@ export function ShowMovie({data,children, icon: Icon, ...rest}) {
 
       <Profile>
         <img 
-        src="https://www.github.com/douglaSantoSilva.png" 
+        src={avatar} 
         alt="Foto do Usuário" />
-          {data.name}
+          {title}
         {Icon && <Icon size={16}/>}
-        <span>{data.time}</span>
+        <span>{data.updated_at}</span>
       </Profile>
       
       {

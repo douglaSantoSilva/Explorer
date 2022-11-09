@@ -14,6 +14,12 @@ export const Container = styled.div`
     margin: 0 auto;
     grid-area: content;
     overflow-y: auto;
+
+    button {
+      background-color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+      width: 100%;
+    }
   }
 `
 export const Content = styled.div`

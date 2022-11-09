@@ -8,6 +8,8 @@ import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { FiArrowLeft } from 'react-icons/fi'
 import { useState } from 'react'
+import { api } from '../../services/api'
+import { useNavigate } from 'react-router-dom'
 
 export function New() {
   const [title, setTitle] = useState("")
@@ -16,14 +18,36 @@ export function New() {
   const [tag, setTag] = useState("")
   const [tags, setTags] = useState([])
 
+  const navigate = useNavigate()
+
   function handleAddTag() {
     setTags(prevState => [...prevState, tag])
 
-    console.log(tags)
+    setTag("")
   }
 
   function handleRemoveTag(deleted) {
-    setTags(prevState => prevState.filter(link => link !== deleted))
+    setTags(prevState => prevState.filter(tag => tag !== deleted))
+  }
+
+  async function handleAddNotes() {
+    if(tag) {
+      return alert("Você deixou uma tag preenchida, porém não clicou para adiciona-la.")
+    }
+    
+    if(!title) {
+      return alert("Digite o título da nota.")
+    }
+
+    api.post("/notes", {
+      title,
+      description,
+      rating,
+      tags
+    })
+
+    alert("Nota Criada com Sucesso!")
+    navigate(-1)
   }
 
   return(
@@ -60,7 +84,7 @@ export function New() {
                 <TagHighlighter 
                 key={String(index)}
                 value={tag}
-                onClick={() => handleRemoveTag(link)}
+                onClick={() => handleRemoveTag(tag)}
                 />
               )) 
 
@@ -69,6 +93,7 @@ export function New() {
               <TagHighlighter 
                 isNew 
                 placeholder="Novo Marcador"
+                value={tag}
                 onChange={e => setTag(e.target.value)}
                 onClick={handleAddTag}
               />
@@ -77,8 +102,7 @@ export function New() {
 
           <NewNote>
             <div>
-              <ButtonSign title="Excluir filme"/>
-              <ButtonSign title="Salvar alterações"/>
+              <ButtonSign title="Salvar alterações" onClick={handleAddNotes} />
             </div>
           </NewNote>
 

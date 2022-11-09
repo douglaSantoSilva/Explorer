@@ -61,15 +61,12 @@ export const NewNote = styled.div`
 
     gap: 40px;
 
-    button:nth-child(1){
-      background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-      color: ${({theme}) => theme.COLORS.PINK};
+    button{
+      width: 100%;
+      background-color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({theme}) => theme.COLORS.BACKGROUND_900};
     }
 
-    button {
-      color: ${({theme}) => theme.COLORS.GRAY_300};
-      width: 100%;
-    }
   }
 `
 

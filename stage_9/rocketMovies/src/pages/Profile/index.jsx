@@ -21,14 +21,16 @@ export function Profile() {
   const [oldPassword, setOldPassword] = useState()
 
   async function handleUserUpdate() {
-    const userUpdate = {
+    const update = {
       name,
       email,
       old_password: oldPassword,
       password
     }
 
-  await updateProfile({ user: userUpdate, avatarFile})
+    const userUpdated = Object.assign(user, update)
+
+  await updateProfile({ user: userUpdated, avatarFile})
   }
 
   function handleChangeAvatar(event) {
@@ -42,7 +44,7 @@ export function Profile() {
   return(
     <Container>
       <header>
-        <TextButton title="Voltar" icon={FiArrowLeft} to="/" />
+        <TextButton title="Voltar" icon={FiArrowLeft} to={-1} />
       </header>
         <Form>
           <Avatar>

@@ -6,7 +6,7 @@ class UserAvatarController {
   async update(request, response){
     const user_id = request.user.id
     const avatarFileName = request.file.filename
-    console.log(avatarFileName)
+
     const diskStorage = new DiskStorage()
 
     const user = await knex("users")
@@ -19,10 +19,10 @@ class UserAvatarController {
     if(user.avatar) {
       await diskStorage.deleteFile(user.avatar)
     }
-    console.log(user)
+   
     const filename = await diskStorage.saveFile(avatarFileName)
     user.avatar = filename
-    console.log(user)
+
     await knex("users").update(user).where({id: user_id})
 
     return response.json(user)

@@ -4,7 +4,6 @@ import { Section } from '../../components/section'
 import { FiPlus, FiSearch } from 'react-icons/fi'
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
-import { useNavigate } from 'react-router-dom'
 import { Notes } from '../../components/Note'
 import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
@@ -33,13 +32,12 @@ export function Home() {
   }
 
   function handleDetails(id) {
-    navigate(`/details/${id}`)
+    api.apply(`/details/${id}`)
   }
 
   useEffect(() => {
     async function fetchTags() {
       const response = await api.get("/tags")
-      console.log(response)
       setTags(response.data)
     }
 

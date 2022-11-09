@@ -4,7 +4,7 @@ import { FiStar } from 'react-icons/fi'
 
 export function NoteMovie({data,...rest}) {
   return(
-    <Container {...rest} to="/details/2">
+    <Container {...rest}>
       <h1>{data.title}</h1>
       
         <Star>
@@ -15,7 +15,7 @@ export function NoteMovie({data,...rest}) {
           {data.rating == 5 ? <FiStar className="giveStar"/> : <FiStar/>}
         </Star>
        
-      <p>{data.description}</p>
+      <p>{ data.description }</p>
       {
       data.tags &&
         <footer>
