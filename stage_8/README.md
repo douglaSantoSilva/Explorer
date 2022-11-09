@@ -1,5 +1,37 @@
 # BackEnd Nodejs Projeto Node_filmes
 
+- Iniciar um projeto Node.js;
+- Adicionar Express no projeto;
+- Rotas;
+- Métodos HTTP;
+- Route Params;
+- Query Params;
+- Instação e utilização do nodemon;
+- Instalação e utilização do Insomnia;
+- Body Params;
+- Controller;
+- HTTP Status Codes;
+- Middleware;
+- Lidar com erros na API;
+- O que é um banco de dados;
+- Como conectar um banco de dados SQLite;
+- Utilização da ferramenta Beekeper Studio;
+- Comandos DML;
+- Comandos DDL;
+- Migrations;
+- Fazer consultas no SQL;
+- Criptografar senhas no banco de dados;
+- Validações no back-end;
+- SQL Query Builder;
+- Instalar Knex/js;
+- Configurar Knex.js;
+- NPM vs NPX;
+- Primary Key;
+- Foreign Key;
+- Cardinalidade;
+- Inner Join;
+- Map e Filter;
+
 ## Arquitetura Utilizada
 Separação por responsabilidades, contendo pasta geral src, e nela as pastas de routes, controller, utils e database.
 
