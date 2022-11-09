@@ -1,5 +1,5 @@
 # Rocket Notes
-Na aplicação podemos criar anotações com links úteis e tags para filtragem.
+Na aplicação podemos criar anotações com links úteis e tags para filtragem. Back-end disponível na pasta stage 8.
 - Front-end Utilizando React e Styled-components
 - Integração do Front-end e back-end por meio do Axios.
 - Criação de Contexto.
