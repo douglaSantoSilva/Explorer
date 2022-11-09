@@ -7,7 +7,6 @@ const notesRoutes = Router();
 
 const notesController = new NotesController();
 
-//colocando o middleware em todas as rotas com o use
 notesRoutes.use(ensureAuthenticated)
 notesRoutes.get("/", notesController.index);
 notesRoutes.post("/", notesController.create);

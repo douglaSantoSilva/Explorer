@@ -3,6 +3,7 @@ import { TextButton } from '../../components/TextButton'
 import { Section } from '../../components/section'
 import { FiPlus, FiSearch } from 'react-icons/fi'
 import { Header } from '../../components/Header'
+import { useNavigate } from 'react-router-dom'
 import { Input } from '../../components/Input'
 import { Notes } from '../../components/Note'
 import { useState, useEffect } from 'react'
@@ -32,7 +33,7 @@ export function Home() {
   }
 
   function handleDetails(id) {
-    api.apply(`/details/${id}`)
+    navigate(`/details/${id}`)
   }
 
   useEffect(() => {
@@ -53,7 +54,6 @@ export function Home() {
     fetchNotes()
   }, [tagsSelected, search])
 
-  console.log('notes', notes)
   return(
     <Container>
       <Brand>

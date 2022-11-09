@@ -32,6 +32,10 @@ export function Profile() {
       old_password: passwordOld
     }
 
+    if(passwordNew && !passwordOld) {
+      return  alert("Digite a senha antiga.")
+    }
+
     const userUpdated = Object.assign(user, updated)
 
     await updateProfile({ user: userUpdated, avatarFile })
