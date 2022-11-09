@@ -104,8 +104,8 @@ Projetos realizados no curso Explorer da RocketSeat.
    Front-end criado com React e styled-components, aplicação RocketNotes e RocketMovies. <br/>
    Integração de Front-end e Back-end
   <ul>
-  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9/rocketnotes">Rocket Notes.</a></li>
-  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9/rocketMovies">Rocket Movies</a></li>
+  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9">Rocket Notes.</a></li>
+  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9">Rocket Movies</a></li>
   </ul>
   <br><br>
   <div style="display:flex" align="center">
