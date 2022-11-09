@@ -98,10 +98,11 @@ Projetos realizados no curso Explorer da RocketSeat.
   <br><br>
 </div>
 
-## Stage 9
+## Stage 9 e 10 🧑‍🚀
 
 <div>
-   Front-end criado com React e styled-components, aplicação RocketNotes e RocketMovies.
+   Front-end criado com React e styled-components, aplicação RocketNotes e RocketMovies. <br/>
+   Integração de Front-end e Back-end
   <ul>
   <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9/rocketnotes">Rocket Notes.</a></li>
   <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9/rocketMovies">Rocket Movies</a></li>
@@ -109,13 +110,5 @@ Projetos realizados no curso Explorer da RocketSeat.
   <br><br>
 </div>
 
-## Stage 10 🧑‍🚀
 
-<div>
-   Integração do Front-end e Back-end Api Restful.
-  <ul>
-  <li><a href="">Rocket Notes.</a></li>
-  <li><a href="">Rocket Movies</a></li>
-  </ul>
-  <br><br>
-</div>
+
