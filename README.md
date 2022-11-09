@@ -92,8 +92,8 @@ Projetos realizados no curso Explorer da RocketSeat.
 <div>
    Backend criado com express, aplicação RocketNotes e RocketMovies.
   <ul>
-  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_8/criandoAplicacaoNodeJs">Rocket Notes.</a></li>
-  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_8/node_filmes">Rocket Movies</a></li>
+  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_8">Rocket Notes.</a></li>
+  <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_8">Rocket Movies</a></li>
   </ul>
   <br><br>
 </div>
