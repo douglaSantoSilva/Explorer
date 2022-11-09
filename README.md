@@ -108,7 +108,13 @@ Projetos realizados no curso Explorer da RocketSeat.
   <li><a href="https://github.com/douglaSantoSilva/Explorer/tree/master/stage_9/rocketMovies">Rocket Movies</a></li>
   </ul>
   <br><br>
+  <div style="display:flex" align="center">
+    <img width="40%" height="40%" src="https://user-images.githubusercontent.com/107257951/200891476-01ab05f1-3ac4-490e-895f-4944eff8affe.png">
+    <img width="40%" height="40%" src="https://user-images.githubusercontent.com/107257951/200892057-1192e5c7-d983-449f-ba64-fe97d6731b7d.png">
+  </div>
 </div>
+
+
 
 
 
