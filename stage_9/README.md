@@ -9,4 +9,5 @@ Na aplicação podemos criar anotações com links úteis e tags para filtragem.
 
 # Rocket Movies
 - já finalizei ainda irei escrever sobre.
-https://user-images.githubusercontent.com/107257951/200891476-01ab05f1-3ac4-490e-895f-4944eff8affe.png
+<img src="https://user-images.githubusercontent.com/107257951/200891476-01ab05f1-3ac4-490e-895f-4944eff8affe.png">
+
